@@ -68,34 +68,40 @@ export default function PitchMarker({pitch, stringId, stringPos, isVisible, high
         return getRandomIntInclusive(0, 5);
     }
 
-    const baseStyle = {
-        width: '1.8em',
-        height: '1.8em',
-        borderRadius: '50%',
-        backgroundColor: 'rgba(255, 255, 255, 0)',
-        position: 'relative',
-    }
+    // const baseStyle = {
+    //     width: '1.8em',
+    //     height: '1.8em',
+    //     borderRadius: '50%',
+    //     backgroundColor: 'rgba(255, 255, 255, 0)',
+    //     position: 'relative',
+    // }
 
-    const dynamicStyle = {
-        visibility: isVisible ? 'visible' : 'hidden',
-        borderWidth: `${getTopHighlight([])}px`,
-        borderColor: 'rgba(0, 0, 0, 1)',
-        borderStyle: getTopHighlight([]) > 0 ? 'solid' : 'none',
-    }
+    // const dynamicStyle = {
+    //     visibility: isVisible ? 'visible' : 'hidden',
+    //     borderWidth: `${getTopHighlight([])}px`,
+    //     borderColor: 'rgba(0, 0, 0, 1)',
+    //     borderStyle: getTopHighlight([]) > 0 ? 'solid' : 'none',
+    // }
 
-    const comboStyle = {...baseStyle, ...dynamicStyle};
+    // const comboStyle = {...baseStyle, ...dynamicStyle};
 
-    const labelStyle = {
-        position: 'absolute',
-        top: 'calc(50% - 0.5em)',
-        textAlign: 'center',
-        width: '100%',
-    }
+    // const labelStyle = {
+    //     position: 'absolute',
+    //     top: 'calc(50% - 0.5em)',
+    //     textAlign: 'center',
+    //     width: '100%',
+    // }
 
+    // return (
+    //     <div className={`pitch-marker ${pitch} ${stringId}-${stringPos} ${visClass} ${highlightsClass}`} style={comboStyle}>
+    //         <div className="marker-outline" />
+    //         <div className="marker-label" style={labelStyle}>{pitchLabel}</div>
+    //     </div>
+    // )
     return (
-        <div className={`pitch-marker ${pitch} ${stringId}-${stringPos} ${visClass} ${highlightsClass}`} style={comboStyle}>
-            <div className="marker-outline" />
-            <div className="marker-label" style={labelStyle}>{pitchLabel}</div>
-        </div>
+        <>
+            <circle cx="24" cy="24" r="19" stroke-width="4.16" fill="none"></circle>
+            <text x="13" y="29" class="svg-text" font-weight="normal" font-size="16px">NN</text>
+        </>
     )
 }

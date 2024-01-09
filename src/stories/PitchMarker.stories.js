@@ -9,6 +9,13 @@ export default {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
+  decorators: [(story) => {
+    return (
+      <svg width="48" height="48" viewBox="0 0 48 48" stroke="#aa0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        {story()}
+      </svg>
+    );
+  }]
 };
 
 export const Default = {
