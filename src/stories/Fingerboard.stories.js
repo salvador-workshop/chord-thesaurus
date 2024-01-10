@@ -16,6 +16,6 @@ export const Default = {
     isFretted: false,
     isReversed: false,
     stringPitches: [50, 40, 30, 20],
-    maxPositions: 24,
+    maxPositions: 18,
   },
 };
