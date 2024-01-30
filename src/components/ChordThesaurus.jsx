@@ -27,7 +27,7 @@ export default function ChordThesaurus() {
                     <h3>{section.subtitle}</h3>
                     <p>{section.description}</p>
                 </hgroup>
-                <DiagramContainer>
+                {/* <DiagramContainer>
                     {section.diagrams.map((diagram, idx) => {
                         const id = `${section.id}-${idx}`;
                         const formattedChord = formatChord(diagram);
@@ -37,10 +37,8 @@ export default function ChordThesaurus() {
                             </DiagramWrapper>
                         )
                     })}
-                </DiagramContainer>
-                <div>
+                </DiagramContainer> */}
                 <FbDiagramGroup sectionId={section.id} settings={initialSettings} chordSection={section}/>
-                </div>
             </Fragment>
         )
     });

@@ -26,8 +26,16 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
 
     const positionDrawnChords = (svgChords) => {
         console.log(svgChords);
+        const levelBreak = 4
         svgChords.forEach((svgEl, idx) => {
-            svgEl.setAttribute('x', 800 * idx);
+            const level = Math.floor(idx / levelBreak);
+            const col = idx % levelBreak;
+            console.log(level, col);
+
+            svgEl.setAttribute('width', 400);
+            svgEl.setAttribute('height', 400);
+            svgEl.setAttribute('x', 500 * col);
+            svgEl.setAttribute('y', 450 * level);
         });
     }
 
@@ -37,6 +45,6 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
     }, []);
 
     return (
-        <svg className={domId} width={2000} height={1000}></svg>
+        <svg className={domId} width={2000} height={900}></svg>
     )
 }
