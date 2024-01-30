@@ -16,7 +16,7 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
 
     // calculating dimensions and positioning for diagrams
     const svgBaseX = svgGroupWidth / diagramsPerRow;
-    const svgWidth = svgBaseX * 0.8;
+    const svgWidth = svgBaseX;
     const svgHeight = svgWidth;
     const svgBaseY = svgHeight * 1.125;
 
