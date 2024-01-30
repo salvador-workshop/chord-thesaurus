@@ -37,7 +37,7 @@
             ]
         },
         {
-            "id": "dom7-s11-f12",
+            "id": "dom7-s11-b12",
             "title": "7#11 / 7b12 / 7b5",
             "diagrams": [
                 {
@@ -66,6 +66,77 @@
                         [3, 2, "3rd"],
                         [4, 1, "7th"],
                         [5, 2, "5th"],
+                        [6, 1, "root"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "dom7b9",
+            "title": "7b9",
+            "subtitle": "Shell voicing",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 1, "9th"],
+                        [2, 3, "7th"],
+                        [3, 1, "3rd"],
+                        [4, 2, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 2,
+                    "fingers": [
+                        [2, 1, "9th"],
+                        [3, 2, "7th"],
+                        [4, 1, "3rd"],
+                        [5, 2, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 4,
+                    "fingers": [
+                        [3, 1, "9th"],
+                        [4, 3, "7th"],
+                        [5, 2, "3rd"],
+                        [6, 3, "root"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "dom7s5",
+            "title": "7#5",
+            "subtitle": "Shell voicing",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 2, "3rd"],
+                        [3, 4, "5th"],
+                        [4, 1, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 2,
+                    "fingers": [
+                        [2, 3, "3rd"],
+                        [4, 4, "5th"],
+                        [5, 1, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 4,
+                    "fingers": [
+                        [3, 3, "3rd"],
+                        [5, 4, "5th"],
                         [6, 1, "root"]
                     ],
                     "barres": []

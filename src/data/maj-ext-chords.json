@@ -1,25 +1,105 @@
 {
     "sections": [
         {
-            "id": "maj-ext",
-            "title": "Major ext",
-            "subtitle": "...",
+            "id": "maj7",
+            "title": "Major 7th",
             "diagrams": [
                 {
                     "position": 1,
                     "fingers": [
-                        [3, 1, "5th"],
-                        [4, 3, "3rd"],
-                        [5, 4, "root"]
+                        [1, 3, "3rd"],
+                        [2, 3, "7th"],
+                        [3, 3, "5th"],
+                        [4, 1, "root"]
                     ],
                     "barres": []
                 },
                 {
                     "position": 2,
                     "fingers": [
-                        [3, 1, "root"],
-                        [4, 1, "5th"],
-                        [5, 3, "3rd"]
+                        [2, 3, "3rd"],
+                        [3, 2, "7th"],
+                        [4, 3, "5th"],
+                        [5, 1, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 4,
+                    "fingers": [
+                        [3, 2, "3rd"],
+                        [4, 2, "7th"],
+                        [5, 3, "5th"],
+                        [6, 1, "root"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "maj9",
+            "title": "Major 9th",
+            "subtitle": "Shell voicing",
+            "description": "These should fit dom9 chords as well.",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 2, "9th"],
+                        [3, 1, "3rd"],
+                        [4, 2, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 2,
+                    "fingers": [
+                        [2, 2, "9th"],
+                        [4, 1, "3rd"],
+                        [5, 2, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 4,
+                    "fingers": [
+                        [3, 1, "9th"],
+                        [5, 1, "3rd"],
+                        [6, 2, "root"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "maj6",
+            "title": "Major 6th",
+            "subtitle": "Shell voicing",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 3, "3rd"],
+                        [2, 1, "6th"],
+                        [4, 1, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 2,
+                    "fingers": [
+                        [2, 4, "3rd"],
+                        [3, 1, "6th"],
+                        [5, 2, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 4,
+                    "fingers": [
+                        [3, 3, "3rd"],
+                        [4, 1, "6th"],
+                        [6, 2, "root"]
                     ],
                     "barres": []
                 }

@@ -10,6 +10,7 @@ import domChords from '../data/dom-chords.json';
 import minChords from '../data/min-chords.json';
 import minExtChords from '../data/min-ext-chords.json';
 import dimChords from '../data/dim-chords.json';
+import dimExtChords from '../data/dim-ext-chords.json';
 
 export default function ChordThesaurus() {
     const renderChordChapter = (chordChapter) => {
@@ -45,5 +46,6 @@ export default function ChordThesaurus() {
 
         <h2>Diminished Chords</h2>
         {renderChordChapter(dimChords)}
+        {renderChordChapter(dimExtChords)}
     </>;
 }
