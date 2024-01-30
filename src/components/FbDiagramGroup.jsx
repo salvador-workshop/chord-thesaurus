@@ -62,6 +62,6 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
     }, []);
 
     return (
-        <svg className={domId} width={svgGroupWidth} height={svgGroupHeight}></svg>
+        <svg className={domId} viewBox={`0 0 ${svgGroupWidth} ${svgGroupHeight}`}></svg>
     )
 }
