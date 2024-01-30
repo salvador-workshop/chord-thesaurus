@@ -1,0 +1,29 @@
+{
+    "sections": [
+        {
+            "id": "maj-ext",
+            "title": "Major ext",
+            "subtitle": "...",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "fingers": [
+                        [3, 1, "5th"],
+                        [4, 3, "3rd"],
+                        [5, 4, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 2,
+                    "fingers": [
+                        [3, 1, "root"],
+                        [4, 1, "5th"],
+                        [5, 3, "3rd"]
+                    ],
+                    "barres": []
+                }
+            ]
+        }
+    ]
+}

@@ -5,8 +5,10 @@ import {
 import FbDiagramGroup from './FbDiagramGroup';
 
 import majChords from '../data/maj-chords.json';
+import majExtChords from '../data/maj-ext-chords.json';
 import domChords from '../data/dom-chords.json';
 import minChords from '../data/min-chords.json';
+import minExtChords from '../data/min-ext-chords.json';
 import dimChords from '../data/dim-chords.json';
 
 export default function ChordThesaurus() {
@@ -16,10 +18,12 @@ export default function ChordThesaurus() {
                 <Fragment key={section.id}>
                     <hgroup>
                         {section.title && <h3>{section.title}</h3>}
-                        {section.subtitle && <h4>{section.subtitle}</h4>}
-                        {section.description && <p>{section.description}</p>}
+                        <p>
+                            {section.subtitle && <h4 style={{display: "inline"}}>{section.subtitle}</h4>}
+                            {section.description && <><br/><span>{section.description}</span></>}
+                        </p>
                     </hgroup>
-                    <FbDiagramGroup sectionId={section.id} settings={initialSettings} chordSection={section}/>
+                    <FbDiagramGroup sectionId={section.id} settings={initialSettings} chordSection={section} />
                 </Fragment>
             )
         });
@@ -30,13 +34,15 @@ export default function ChordThesaurus() {
 
         <h2>Major Chords</h2>
         {renderChordChapter(majChords)}
-        
+        {renderChordChapter(majExtChords)}
+
         <h2>Dominant Chords</h2>
         {renderChordChapter(domChords)}
-        
+
         <h2>Minor Chords</h2>
         {renderChordChapter(minChords)}
-        
+        {renderChordChapter(minExtChords)}
+
         <h2>Diminished Chords</h2>
         {renderChordChapter(dimChords)}
     </>;
