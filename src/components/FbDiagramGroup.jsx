@@ -8,20 +8,20 @@ import { formatChord } from '../style-utils';
  * @prop {*} chordSection
  */
 export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
-    console.log(`Drawing chord group ${sectionId}`, settings, chordSection);
     const domId = `fb-diagram-grp-${sectionId}`;
 
     // base values for positioning calcs
     const svgGroupWidth = 2000;
     const diagramsPerRow = 4;
 
-    // positions of charts
+    // calculating dimensions and positioning for diagrams
     const svgBaseX = svgGroupWidth / diagramsPerRow;
-    const svgWidth = svgBaseX - 100;
+    const svgWidth = svgBaseX * 0.8;
     const svgHeight = svgWidth;
-    const svgBaseY = svgHeight + 50;
+    const svgBaseY = svgHeight * 1.125;
 
-    const numRows = Math.floor(chordSection.diagrams.length / 4) + 1;
+    // calculating number of rows and group height
+    const numRows = 1 + Math.floor((chordSection.diagrams.length - 1) / diagramsPerRow);
     const svgGroupHeight = svgBaseY * numRows;
 
     const drawChords = (section) => {

@@ -131,6 +131,72 @@
                         [3, 3, "5th"]
                     ],
                     "barres": []
+                },
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "less-smol",
+            "title": "less smol",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
                 }
             ]
         },
