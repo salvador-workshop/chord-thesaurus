@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import ChordData from '../data/chords.json';
 import FbDiagram from './FbDiagram';
 
-const settings = {
+const initialSettings = {
     color: '#000000',
     strings: 6,
     frets: 4,
@@ -61,7 +61,7 @@ export default function ChordThesaurus() {
 
                         return (
                             <DiagramWrapper>
-                                <FbDiagram diagramId={id} settings={settings} chord={formattedChord} />
+                                <FbDiagram diagramId={id} settings={{...initialSettings, position: diagram.position}} chord={formattedChord} />
                             </DiagramWrapper>
                         )
                     })}

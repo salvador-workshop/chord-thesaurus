@@ -7,6 +7,7 @@
             "description": "...",
             "diagrams": [
                 {
+                    "position": 1,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -15,6 +16,7 @@
                     "barres": []
                 },
                 {
+                    "position": 2,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -23,6 +25,7 @@
                     "barres": []
                 },
                 {
+                    "position": 4,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -31,6 +34,7 @@
                     "barres": []
                 },
                 {
+                    "position": 3,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -39,6 +43,7 @@
                     "barres": []
                 },
                 {
+                    "position": 4,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -55,6 +60,7 @@
             "description": "... (clone)",
             "diagrams": [
                 {
+                    "position": 6,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -63,6 +69,7 @@
                     "barres": []
                 },
                 {
+                    "position": 4,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -71,6 +78,7 @@
                     "barres": []
                 },
                 {
+                    "position": 7,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -79,6 +87,7 @@
                     "barres": []
                 },
                 {
+                    "position": 2,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -87,6 +96,7 @@
                     "barres": []
                 },
                 {
+                    "position": 1,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
