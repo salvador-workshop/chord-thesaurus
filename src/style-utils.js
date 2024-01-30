@@ -1,7 +1,7 @@
 export const initialSettings = {
     color: '#000000',
     strings: 6,
-    frets: 5,
+    frets: 4,
     position: 1,
     nutWidth: 18,
     strokeWidth: 6,

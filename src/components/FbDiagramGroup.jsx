@@ -12,7 +12,7 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
 
     // base values for positioning calcs
     const svgGroupWidth = 2000;
-    const diagramsPerRow = 4;
+    const diagramsPerRow = 6;
 
     // calculating dimensions and positioning for diagrams
     const svgBaseX = svgGroupWidth / diagramsPerRow;
@@ -32,7 +32,7 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
                 chart.configure({
                     ...settings,
                     position: diagram.position,
-                    frets: diagram.frets,
+                    frets: diagram.frets || settings.frets,
                     title: diagram.title,
                 }).chord(formattedChord).draw();
             } catch (err) {
