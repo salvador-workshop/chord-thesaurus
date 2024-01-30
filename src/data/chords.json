@@ -1,0 +1,100 @@
+{
+    "sections": [
+        {
+            "id": "min",
+            "title": "Minor",
+            "subtitle": "Minor triads",
+            "description": "...",
+            "diagrams": [
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "min",
+            "title": "Minor (clone)",
+            "subtitle": "Minor triads (clone)",
+            "description": "... (clone)",
+            "diagrams": [
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                }
+            ]
+        }
+    ]
+}
