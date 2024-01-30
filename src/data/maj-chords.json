@@ -1,0 +1,64 @@
+{
+    "sections": [
+        {
+            "id": "maj",
+            "title": "Major",
+            "subtitle": "Major triads",
+            "description": "...",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 2,
+                    "frets": 3,
+                    "title": "D♭99♯11",
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 4,
+                    "frets": 4,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 3,
+                    "frets":3,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 4,
+                    "frets": 5,
+                    "title": "F♯69sus4",
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                }
+            ]
+        }
+    ]
+}
