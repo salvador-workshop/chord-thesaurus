@@ -1,35 +1,13 @@
 import { Fragment } from 'react';
 import ChordData from '../data/chords.json';
 import FbDiagram from './FbDiagram';
-
-const initialSettings = {
-    color: '#000000',
-    strings: 6,
-    frets: 4,
-    position: 1,
-    nutWidth: 18,
-    strokeWidth: 6,
-    fingerSize: 0.8,
-    fingerTextSize: 22,
-    style: 'normal',
-    orientation: 'vertical',
-};
-
-const diagramContainerStyle = {
-    display: 'flex',
-    flexWrap: 'wrap'
-}
-
-const diagramWrapperStyle = {
-    flex: '0 0 25%',
-}
-
-const markerStyleMap = {
-    "root": {strokeColor: '#000000', color: '#ffffff', text: 'R', textColor: "#000000", strokeWidth: 4 },
-    "3rd": {strokeColor: '#000000', color: '#bbbbbb', text: '3', textColor: "#000000", strokeWidth: 4 },
-    "5th": {strokeColor: '#000000', color: '#000000', text: '5', textColor: "#ffffff", strokeWidth: 4 },
-    "7th": {strokeColor: '#000000', color: '#bbbbbb', text: '7', textColor: "#000000", strokeWidth: 4 },
-}
+import {
+    initialSettings,
+    diagramContainerStyle,
+    diagramWrapperStyle,
+    formatChord
+} from '../style-utils';
+import FbDiagramGroup from './FbDiagramGroup';
 
 function DiagramContainer({ children }) {
     return <div className='diagram-container' style={diagramContainerStyle}>{children}</div>
@@ -52,13 +30,7 @@ export default function ChordThesaurus() {
                 <DiagramContainer>
                     {section.diagrams.map((diagram, idx) => {
                         const id = `${section.id}-${idx}`;
-                        const formattedChord = {
-                            fingers: diagram.fingers.map(fing => {
-                                return [fing[0], fing[1], markerStyleMap[fing[2]]]
-                            }),
-                            barres: diagram.barres,
-                        }
-
+                        const formattedChord = formatChord(diagram);
                         return (
                             <DiagramWrapper>
                                 <FbDiagram diagramId={id} settings={{...initialSettings, position: diagram.position}} chord={formattedChord} />
@@ -66,9 +38,12 @@ export default function ChordThesaurus() {
                         )
                     })}
                 </DiagramContainer>
+                <div>
+                <FbDiagramGroup sectionId={section.id} settings={initialSettings} chordSection={section}/>
+                </div>
             </Fragment>
         )
-    })
+    });
 
     return <>
         <h1>Guitar Chord Thesaurus</h1>
