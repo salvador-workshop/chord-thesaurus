@@ -52,12 +52,9 @@ export const Barre = {
     diagramId: 12123,
     settings: Default.args.settings,
     chord: {
-      // array of [string, fret | 'x' | 0]
       fingers: [
         [1, 3, {strokeWidth: 4 }],
       ],
-
-      // optional: barres for barre chords
       barres: [{ fromString: 5, toString: 1, fret: 2 }],
     }
   }
@@ -83,7 +80,6 @@ export const MutesOpens = {
     diagramId: 5646548,
     settings: Default.args.settings,
     chord: {
-      // array of [string, fret | 'x' | 0]
       fingers: [
         [1, 'x', {strokeWidth: 4 }],
         [2, 'x', {strokeWidth: 4 }],
@@ -92,8 +88,6 @@ export const MutesOpens = {
         [5, 0, {strokeWidth: 4 }],
         [6, 0, {strokeWidth: 4 }],
       ],
-
-      // optional: barres for barre chords
       barres: [],
     }
   }
@@ -104,15 +98,12 @@ export const ColouredFingerMarkers = {
     diagramId: 465465,
     settings: Default.args.settings,
     chord: {
-      // array of [string, fret | 'x' | 0]
       fingers: [
         [1, 2, { strokeColor: '#ff0000', color: '#00ff00', strokeWidth: 4 }],
         [2, 3, { strokeColor: '#ff0000', color: '#0000ff', strokeWidth: 4 }],
         [3, 4, { strokeColor: '#00ff00', color: '#ff0000', strokeWidth: 4 }],
         [4, 3, { color: '#111111', text: 'E#', textColor: "#ff8888", strokeWidth: 4 }],
       ],
-
-      // optional: barres for barre chords
       barres: [],
     }
   }

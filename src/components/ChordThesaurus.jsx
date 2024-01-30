@@ -1,4 +1,5 @@
-import { Children } from 'react';
+import { Fragment } from 'react';
+import ChordData from '../data/chords.json';
 import FbDiagram from './FbDiagram';
 
 const settings = {
@@ -13,70 +14,64 @@ const settings = {
     style: 'normal',
     orientation: 'vertical',
 };
-const chord = {
-    // array of [string, fret | 'x' | 0]
-    fingers: [
-        [1, 2, { strokeWidth: 4 }],
-        [2, 3, { strokeWidth: 4 }],
-        [3, 3, { strokeWidth: 4 }],
-    ],
-    barres: []
-};
 
 const diagramContainerStyle = {
     display: 'flex',
     flexWrap: 'wrap'
 }
+
 const diagramWrapperStyle = {
     flex: '0 0 25%',
 }
 
-function DiagramContainer({children}) {
+const markerStyleMap = {
+    "root": {strokeColor: '#000000', color: '#ffffff', text: 'R', textColor: "#000000", strokeWidth: 4 },
+    "3rd": {strokeColor: '#000000', color: '#bbbbbb', text: '3', textColor: "#000000", strokeWidth: 4 },
+    "5th": {strokeColor: '#000000', color: '#000000', text: '5', textColor: "#ffffff", strokeWidth: 4 },
+    "7th": {strokeColor: '#000000', color: '#bbbbbb', text: '7', textColor: "#000000", strokeWidth: 4 },
+}
+
+function DiagramContainer({ children }) {
     return <div className='diagram-container' style={diagramContainerStyle}>{children}</div>
 }
-function DiagramWrapper({children}) {
+
+function DiagramWrapper({ children }) {
     return <div className='diagram-wrapper' style={diagramWrapperStyle}>{children}</div>
 }
 
 export default function ChordThesaurus() {
+
+    const chordSections = ChordData.sections.map(section => {
+        return (
+            <Fragment key={section.id}>
+                <hgroup>
+                    <h2>{section.title}</h2>
+                    <h3>{section.subtitle}</h3>
+                    <p>{section.description}</p>
+                </hgroup>
+                <DiagramContainer>
+                    {section.diagrams.map((diagram, idx) => {
+                        const id = `${section.id}-${idx}`;
+                        const formattedChord = {
+                            fingers: diagram.fingers.map(fing => {
+                                return [fing[0], fing[1], markerStyleMap[fing[2]]]
+                            }),
+                            barres: diagram.barres,
+                        }
+
+                        return (
+                            <DiagramWrapper>
+                                <FbDiagram diagramId={id} settings={settings} chord={formattedChord} />
+                            </DiagramWrapper>
+                        )
+                    })}
+                </DiagramContainer>
+            </Fragment>
+        )
+    })
+
     return <>
         <h1>Guitar Chord Thesaurus</h1>
-
-        <h2>Minor 99th</h2>
-        <DiagramContainer>
-            <DiagramWrapper><FbDiagram diagramId={231231} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={898} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={45548} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={47847} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={7487} settings={settings} chord={chord} /></DiagramWrapper>
-        </DiagramContainer>
-
-        <h2>Minor 99th</h2>
-        <DiagramContainer>
-            <DiagramWrapper><FbDiagram diagramId={65465} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={546} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={654} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={324324} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={5465} settings={settings} chord={chord} /></DiagramWrapper>
-        </DiagramContainer>
-
-        <h2>Minor 99th</h2>
-        <DiagramContainer>
-            <DiagramWrapper><FbDiagram diagramId={564} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={54} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={213} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={21} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={56} settings={settings} chord={chord} /></DiagramWrapper>
-        </DiagramContainer>
-
-        <h2>Minor 99th</h2>
-        <DiagramContainer>
-            <DiagramWrapper><FbDiagram diagramId={487589} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={5646} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={6546} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={516} settings={settings} chord={chord} /></DiagramWrapper>
-            <DiagramWrapper><FbDiagram diagramId={2132} settings={settings} chord={chord} /></DiagramWrapper>
-        </DiagramContainer>
-
+        {chordSections}
     </>;
 }
