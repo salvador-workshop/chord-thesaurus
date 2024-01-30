@@ -8,6 +8,7 @@
             "diagrams": [
                 {
                     "position": 1,
+                    "frets": 5,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -17,6 +18,8 @@
                 },
                 {
                     "position": 2,
+                    "frets": 3,
+                    "title": "D♭99♯11",
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -26,6 +29,7 @@
                 },
                 {
                     "position": 4,
+                    "frets": 4,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -35,6 +39,7 @@
                 },
                 {
                     "position": 3,
+                    "frets":3,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -44,6 +49,7 @@
                 },
                 {
                     "position": 4,
+                    "frets": 5,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -61,6 +67,7 @@
             "diagrams": [
                 {
                     "position": 6,
+                    "frets": 4,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -70,6 +77,7 @@
                 },
                 {
                     "position": 4,
+                    "frets": 5,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -79,6 +87,7 @@
                 },
                 {
                     "position": 7,
+                    "frets": 5,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -88,6 +97,8 @@
                 },
                 {
                     "position": 2,
+                    "frets": 3,
+                    "title": "C♯69sus4",
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],
@@ -97,6 +108,39 @@
                 },
                 {
                     "position": 1,
+                    "frets": 4,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "smol",
+            "title": "Smol",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [1, 2, "root"],
+                        [2, 3, "3rd"],
+                        [3, 3, "5th"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "bruh",
+            "description": "...",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "frets": 5,
                     "fingers": [
                         [1, 2, "root"],
                         [2, 3, "3rd"],

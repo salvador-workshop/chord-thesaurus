@@ -11,31 +11,48 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
     console.log(`Drawing chord group ${sectionId}`, settings, chordSection);
     const domId = `fb-diagram-grp-${sectionId}`;
 
+    // base values for positioning calcs
+    const svgGroupWidth = 2000;
+    const diagramsPerRow = 4;
+
+    // positions of charts
+    const svgBaseX = svgGroupWidth / diagramsPerRow;
+    const svgWidth = svgBaseX - 100;
+    const svgHeight = svgWidth;
+    const svgBaseY = svgHeight + 50;
+
+    const numRows = Math.floor(chordSection.diagrams.length / 4) + 1;
+    const svgGroupHeight = svgBaseY * numRows;
+
     const drawChords = (section) => {
         section.diagrams.forEach(diagram => {
             const chart = new SVGuitarChord(`.${domId}`);
             const formattedChord = formatChord(diagram);
             try {
-                chart.configure({...settings, position: diagram.position}).chord(formattedChord).draw();
+                chart.configure({
+                    ...settings,
+                    position: diagram.position,
+                    frets: diagram.frets,
+                    title: diagram.title,
+                }).chord(formattedChord).draw();
             } catch (err) {
-                alert('Failed to create chart: ' + err.message)
-                throw err
+                alert('Failed to create chart: ' + err.message);
+                throw err;
             }
         })
     }
 
     const positionDrawnChords = (svgChords) => {
         console.log(svgChords);
-        const levelBreak = 4
         svgChords.forEach((svgEl, idx) => {
-            const level = Math.floor(idx / levelBreak);
-            const col = idx % levelBreak;
+            const level = Math.floor(idx / diagramsPerRow);
+            const col = idx % diagramsPerRow;
             console.log(level, col);
 
-            svgEl.setAttribute('width', 400);
-            svgEl.setAttribute('height', 400);
-            svgEl.setAttribute('x', 500 * col);
-            svgEl.setAttribute('y', 450 * level);
+            svgEl.setAttribute('width', svgWidth);
+            svgEl.setAttribute('height', svgHeight);
+            svgEl.setAttribute('x', svgBaseX * col);
+            svgEl.setAttribute('y', svgBaseY * level);
         });
     }
 
@@ -45,6 +62,6 @@ export default function FbDiagramGroup({ sectionId, settings, chordSection }) {
     }, []);
 
     return (
-        <svg className={domId} width={2000} height={900}></svg>
+        <svg className={domId} width={svgGroupWidth} height={svgGroupHeight}></svg>
     )
 }
