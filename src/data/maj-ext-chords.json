@@ -15,7 +15,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 3, "3rd"],
                         [3, 2, "7th"],
@@ -25,11 +25,41 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 2, "3rd"],
                         [4, 2, "7th"],
                         [5, 3, "5th"],
+                        [6, 1, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 3, "7th"],
+                        [2, 1, "3rd"],
+                        [3, 1, "root"],
+                        [4, 1, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 1, "3rd"],
+                        [2, 2, "7th"],
+                        [3, 3, "5th"],
+                        [4, 4, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [2, 1, "5th"],
+                        [3, 2, "3rd"],
+                        [4, 2, "7th"],
                         [6, 1, "root"]
                     ],
                     "barres": []
@@ -39,6 +69,52 @@
         {
             "id": "maj9",
             "title": "Major 9th",
+            "diagrams": [
+                {
+                    "position": 1,
+                    "fingers": [
+                        [2, 2, "9th"],
+                        [3, 3, "7th"],
+                        [4, 1, "3rd"],
+                        [5, 2, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "frets": 5,
+                    "fingers": [
+                        [2, 1, "9th"],
+                        [3, 2, "7th"],
+                        [4, 3, "5th"],
+                        [5, 5, "3rd"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 3, "7th"],
+                        [2, 1, "3rd"],
+                        [3, 3, "9th"],
+                        [4, 1, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [2, 4, "7th"],
+                        [3, 1, "3rd"],
+                        [4, 4, "9th"],
+                        [5, 2, "5th"]
+                    ],
+                    "barres": []
+                }
+            ]
+        },
+        {
+            "id": "maj9-shell",
             "subtitle": "Shell voicing",
             "description": "These should fit dom9 chords as well.",
             "diagrams": [
@@ -52,7 +128,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 2, "9th"],
                         [4, 1, "3rd"],
@@ -61,7 +137,7 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 1, "9th"],
                         [5, 1, "3rd"],
@@ -86,7 +162,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 4, "3rd"],
                         [3, 1, "6th"],
@@ -95,7 +171,7 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 3, "3rd"],
                         [4, 1, "6th"],

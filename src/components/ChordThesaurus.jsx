@@ -17,34 +17,21 @@ export default function ChordThesaurus() {
         return chordChapter.sections.map(section => {
             return (
                 <Fragment key={section.id}>
-                    <hgroup>
-                        {section.title && <h3>{section.title}</h3>}
-                        <p>
-                            {section.subtitle && <h4 style={{display: "inline"}}>{section.subtitle}</h4>}
-                            {section.description && <><br/><span>{section.description}</span></>}
-                        </p>
-                    </hgroup>
-                    <FbDiagramGroup sectionId={section.id} settings={initialSettings} chordSection={section} />
+                    <FbDiagramGroup settings={initialSettings} chordSection={section} />
                 </Fragment>
             )
         });
     }
 
     return <>
-        <h1>Guitar Chord Thesaurus</h1>
-
-        <h2>Major Chords</h2>
         {renderChordChapter(majChords)}
         {renderChordChapter(majExtChords)}
 
-        <h2>Dominant Chords</h2>
         {renderChordChapter(domChords)}
 
-        <h2>Minor Chords</h2>
         {renderChordChapter(minChords)}
         {renderChordChapter(minExtChords)}
 
-        <h2>Diminished Chords</h2>
         {renderChordChapter(dimChords)}
         {renderChordChapter(dimExtChords)}
     </>;

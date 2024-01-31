@@ -15,7 +15,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 2, "3rd"],
                         [3, 1, "7th"],
@@ -25,7 +25,7 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 1, "3rd"],
                         [4, 1, "7th"],
@@ -51,7 +51,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 1, "3rd"],
                         [3, 3, "7th"],
@@ -61,7 +61,7 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 2, "3rd"],
                         [4, 1, "7th"],

@@ -2,7 +2,7 @@
     "sections": [
         {
             "id": "dom7",
-            "title": "Dominant 7ths",
+            "title": "Dominant 7th",
             "diagrams": [
                 {
                     "position": 1,
@@ -15,7 +15,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 3, "3rd"],
                         [3, 1, "7th"],
@@ -25,12 +25,32 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 2, "3rd"],
                         [4, 1, "7th"],
                         [5, 3, "5th"],
                         [6, 1, "root"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [2, 1, "root"],
+                        [3, 3, "7th"],
+                        [4, 2, "3rd"],
+                        [6, 3, "5th"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [2, 2, "7th"],
+                        [3, 1, "5th"],
+                        [4, 3, "root"],
+                        [6, 1, "3rd"]
                     ],
                     "barres": []
                 }
@@ -51,7 +71,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 3, "3rd"],
                         [3, 1, "7th"],
@@ -61,7 +81,7 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 2, "3rd"],
                         [4, 1, "7th"],
@@ -75,7 +95,6 @@
         {
             "id": "dom7b9",
             "title": "7b9",
-            "subtitle": "Shell voicing",
             "diagrams": [
                 {
                     "position": 1,
@@ -88,7 +107,7 @@
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
                         [2, 1, "9th"],
                         [3, 2, "7th"],
@@ -98,7 +117,7 @@
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
                         [3, 1, "9th"],
                         [4, 3, "7th"],
@@ -110,34 +129,48 @@
             ]
         },
         {
-            "id": "dom7s5",
-            "title": "7#5",
-            "subtitle": "Shell voicing",
+            "id": "dom9",
+            "title": "Dominant 9th",
             "diagrams": [
                 {
                     "position": 1,
                     "fingers": [
-                        [1, 2, "3rd"],
-                        [3, 4, "5th"],
-                        [4, 1, "root"]
+                        [1, 2, "root"],
+                        [2, 2, "3rd"],
+                        [3, 2, "7th"],
+                        [4, 1, "9th"],
+                        [5, 2, "5th"]
                     ],
                     "barres": []
                 },
                 {
-                    "position": 2,
+                    "position": 1,
                     "fingers": [
-                        [2, 3, "3rd"],
-                        [4, 4, "5th"],
-                        [5, 1, "root"]
+                        [2, 1, "3rd"],
+                        [3, 3, "9th"],
+                        [4, 4, "7th"],
+                        [6, 4, "root"]
                     ],
                     "barres": []
                 },
                 {
-                    "position": 4,
+                    "position": 1,
                     "fingers": [
-                        [3, 3, "3rd"],
-                        [5, 4, "5th"],
-                        [6, 1, "root"]
+                        [1, 2, "root"],
+                        [2, 2, "5th"],
+                        [3, 1, "9th"],
+                        [4, 2, "7th"],
+                        [5, 1, "3rd"]
+                    ],
+                    "barres": []
+                },
+                {
+                    "position": 1,
+                    "fingers": [
+                        [1, 1, "3rd"],
+                        [2, 3, "9th"],
+                        [3, 3, "7th"],
+                        [5, 3, "root"]
                     ],
                     "barres": []
                 }
