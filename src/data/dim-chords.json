@@ -126,8 +126,8 @@
             ]
         },
         {
-            "id": "dim-triad-mid-shell",
-            "subtitle": "Middle shell voicing",
+            "id": "dim-triad-mid",
+            "subtitle": "Middle voicing",
             "description": "Voicings in the middle strings, with some space between notes.",
             "diagrams": [
                 {
@@ -188,8 +188,8 @@
             ]
         },
         {
-            "id": "dim-triad-space-shell",
-            "subtitle": "Spaced shell voicing",
+            "id": "dim-triad-spaced",
+            "subtitle": "Spaced voicing",
             "description": "Voicings with plenty of space between upper and lower strings.",
             "diagrams": [
                 {

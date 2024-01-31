@@ -114,8 +114,8 @@
             ]
         },
         {
-            "id": "min9-shell",
-            "subtitle": "Shell voicing",
+            "id": "min9-light",
+            "subtitle": "Simpler voicing",
             "diagrams": [
                 {
                     "position": 1,
@@ -149,7 +149,6 @@
         {
             "id": "min6",
             "title": "Minor 6th",
-            "subtitle": "Shell voicing",
             "diagrams": [
                 {
                     "position": 1,

@@ -114,8 +114,8 @@
             ]
         },
         {
-            "id": "maj9-shell",
-            "subtitle": "Shell voicing",
+            "id": "maj9-light",
+            "subtitle": "Simpler voicing",
             "description": "These should fit dom9 chords as well.",
             "diagrams": [
                 {
@@ -150,7 +150,6 @@
         {
             "id": "maj6",
             "title": "Major 6th",
-            "subtitle": "Shell voicing",
             "diagrams": [
                 {
                     "position": 1,
