@@ -3,6 +3,7 @@ import {
     initialSettings,
 } from '../style-utils';
 import FbDiagramGroup from './FbDiagramGroup';
+import ChordSection from './ChordSection';
 
 import majChords from '../data/maj-chords.json';
 import majExtChords from '../data/maj-ext-chords.json';
@@ -24,15 +25,23 @@ export default function ChordThesaurus() {
     }
 
     return <>
-        {renderChordChapter(majChords)}
-        {renderChordChapter(majExtChords)}
+        <ChordSection sectionId="maj" sectionLabel="Major">
+            {renderChordChapter(majChords)}
+            {renderChordChapter(majExtChords)}
+        </ChordSection>
 
-        {renderChordChapter(domChords)}
+        <ChordSection sectionId="dom" sectionLabel="Dominant">
+            {renderChordChapter(domChords)}
+        </ChordSection>
 
-        {renderChordChapter(minChords)}
-        {renderChordChapter(minExtChords)}
+        <ChordSection sectionId="min" sectionLabel="Minor">
+            {renderChordChapter(minChords)}
+            {renderChordChapter(minExtChords)}
+        </ChordSection>
 
-        {renderChordChapter(dimChords)}
-        {renderChordChapter(dimExtChords)}
+        <ChordSection sectionId="dim" sectionLabel="Diminished">
+            {renderChordChapter(dimChords)}
+            {renderChordChapter(dimExtChords)}
+        </ChordSection>
     </>;
 }
