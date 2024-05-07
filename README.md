@@ -1,6 +1,6 @@
-# Guitarragrams v2
+# guitarragrams v2
 
-Version 1 is at https://github.com/rjsalvadorr/guitarragrams
+_Version 1 is at https://github.com/rjsalvadorr/guitarragrams_
 
 ## Development
 
