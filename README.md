@@ -1,4 +1,6 @@
-# Chord Thesaurus
+# Guitarragrams v2
+
+Version 1 is at https://github.com/rjsalvadorr/guitarragrams
 
 ## Development
 
