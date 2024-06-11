@@ -17,7 +17,9 @@
     "parcel": "^2.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "svguitar": "^2.2.2"
+    "svguitar": "^2.2.2",
+    "sw-design-system": "^0.0.5",
+    "theme-ui": "^0.16.2"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.7",
