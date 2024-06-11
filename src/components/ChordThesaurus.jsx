@@ -1,4 +1,7 @@
 import { Fragment } from 'react';
+import { ThemeUIProvider } from 'theme-ui';
+import preset from '@theme-ui/preset-base';
+
 import {
     initialSettings,
 } from '../style-utils';
@@ -12,6 +15,7 @@ import minChords from '../data/min-chords.json';
 import minExtChords from '../data/min-ext-chords.json';
 import dimChords from '../data/dim-chords.json';
 import dimExtChords from '../data/dim-ext-chords.json';
+import { Content, Message } from 'sw-design-system';
 
 export default function ChordThesaurus() {
     const renderChordChapter = (chordChapter) => {
@@ -25,6 +29,9 @@ export default function ChordThesaurus() {
     }
 
     return <>
+        <ThemeUIProvider theme={preset}>
+        <Content>Yoooo</Content>
+        <Message>Faaam</Message>
         <ChordSection sectionId="maj" sectionLabel="Major">
             {renderChordChapter(majChords)}
             {renderChordChapter(majExtChords)}
@@ -43,5 +50,6 @@ export default function ChordThesaurus() {
             {renderChordChapter(dimChords)}
             {renderChordChapter(dimExtChords)}
         </ChordSection>
+        </ThemeUIProvider>
     </>;
 }
