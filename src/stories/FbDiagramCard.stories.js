@@ -1,3 +1,5 @@
+import { ThemeUIProvider } from 'theme-ui';
+import preset from '@theme-ui/preset-base';
 import FbDiagram from '../components/FbDiagram';
 import FbDiagramCard from '../components/FbDiagramCard';
 
@@ -51,6 +53,14 @@ export const Default = {
       title: 'Maj7',
       subtitle: 'retarded 5th',
     },
-    children: [<FbDiagram chord={sampleChord} settings={sampleSettings} key={1}/>],
-  }
+    children: [<FbDiagram diagramId='42342' chord={sampleChord} settings={sampleSettings} key={1}/>],
+  },
+  decorators: [
+    (Story) => (
+      <ThemeUIProvider theme={preset}>
+        {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+        <Story />
+      </ThemeUIProvider>
+    ),
+  ],
 };
