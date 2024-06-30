@@ -23,28 +23,68 @@ export const diagramWrapperStyle = {
 }
 
 const defaultMarkerStyle = {strokeColor: '#000000', color: '#000000', strokeWidth: baseStrokeWidth};
+// 1st priority
+const markerStyle1 = {strokeColor: '#000000', color: '#ffffff', textColor: "#000000", strokeWidth: baseStrokeWidth};
+// 2nd priority
+const markerStyle2 = {strokeColor: '#000000', color: '#dddddd', textColor: "#000000", strokeWidth: baseStrokeWidth};
+// 3rd priority
+const markerStyle3 = {strokeColor: '#000000', color: '#bbbbbb', textColor: "#000000", strokeWidth: baseStrokeWidth};
+// 4th priority
+const markerStyle4 = {strokeColor: '#000000', color: '#888888', textColor: "#ffffff", strokeWidth: baseStrokeWidth};
+// 5th priority
+const markerStyle5 = {strokeColor: '#000000', color: '#000000', textColor: "#ffffff", strokeWidth: baseStrokeWidth};
+
+const markerKeyMap = {
+    1: ['1', 'root', 'unison'],
+    2: ['2', '2nd'],
+    3: ['3', '3rd'],
+    4: ['4', '4th'],
+    5: ['5', '5th'],
+    6: ['6', '6th'],
+    7: ['7', '7th'],
+    8: ['8', '8th', 'octave'],
+    9: ['9', '9th'],
+    10: ['10', '10th'],
+    11: ['11', '11th'],
+    12: ['12', '12th'],
+    13: ['13', '13th'],
+    14: ['14', '14th'],
+    15: ['15', '15th', 'octave'],
+}
 
 const markerStyleMap = {
     // 1st priority
-    "root": {strokeColor: '#000000', color: '#ffffff', text: 'R', textColor: "#000000", strokeWidth: baseStrokeWidth},
+    1: {...markerStyle1, text: 'R'},
+    8: {...markerStyle1, text: 'R'},
+    15: {...markerStyle1, text: 'R'},
     // 2nd priority
-    "3rd": {strokeColor: '#000000', color: '#dddddd', text: '3', textColor: "#000000", strokeWidth: baseStrokeWidth},
+    3: {...markerStyle2, text: '3'},
+    10: {...markerStyle3, text: '3'},
     // 3rd priority
-    "7th": {strokeColor: '#000000', color: '#bbbbbb', text: '7', textColor: "#000000", strokeWidth: baseStrokeWidth},
+    7: {...markerStyle3, text: '7'},
+    14: {...markerStyle3, text: '7'},
     // 4th priority
-    "9th": {strokeColor: '#000000', color: '#888888', text: '9', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
+    2: {...markerStyle4, text: '9'},
+    9: {...markerStyle4, text: '9'},
     // 5th priority
-    "10th": {strokeColor: '#000000', color: '#000000', text: '10', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
-    "11th": {strokeColor: '#000000', color: '#000000', text: '11', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
-    "4th": {strokeColor: '#000000', color: '#000000', text: '4', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
-    "12th": {strokeColor: '#000000', color: '#000000', text: '12', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
-    "5th": {strokeColor: '#000000', color: '#000000', text: '5', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
-    "13th": {strokeColor: '#000000', color: '#000000', text: '13', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
-    "6th": {strokeColor: '#000000', color: '#000000', text: '6', textColor: "#ffffff", strokeWidth: baseStrokeWidth},
+    4: {...markerStyle5, text: '11'},
+    11: {...markerStyle5, text: '11'},
+    5: {...markerStyle5, text: '5'},
+    12: {...markerStyle5, text: '5'},
+    6: {...markerStyle5, text: '6'},
+    13: {...markerStyle5, text: '6'},
 }
 
-export const getMarkerStyle = (key) => {
-    return markerStyleMap[key] || defaultMarkerStyle;
+export const getMarkerStyle = (interval) => {
+    const intervalNum = interval.charAt(0);
+    let intervalKey = 0;
+    for (const [intKey, intStrings] of Object.entries(markerKeyMap)) {
+        if(intStrings.includes(intervalNum)) {
+            intervalKey = intKey;
+        }
+    }
+
+    return markerStyleMap[intervalKey] || defaultMarkerStyle;
 }
 
 /**
