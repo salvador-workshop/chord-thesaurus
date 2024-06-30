@@ -158,10 +158,12 @@
       63
     ]
   },
-  "chords": [
+  "sections": [
     {
-      "id": "C major",
+      "id": "maj",
       "title": "C major",
+      "subtitle": "C major subtitle",
+      "description": "C major desc",
       "chordPitches": [
         "C",
         "E",
@@ -486,8 +488,10 @@
       ]
     },
     {
-      "id": "C major seventh",
+      "id": "maj7",
       "title": "C major seventh",
+      "subtitle": "C major seventh subtitle",
+      "description": "C major seventh desc",
       "chordPitches": [
         "C",
         "E",
@@ -940,8 +944,10 @@
       ]
     },
     {
-      "id": "C major ninth",
+      "id": "maj9",
       "title": "C major ninth",
+      "subtitle": "C major ninth subtitle",
+      "description": "C major ninth desc",
       "chordPitches": [
         "C",
         "D",
@@ -1263,8 +1269,10 @@
       ]
     },
     {
-      "id": "C sixth",
+      "id": "M6",
       "title": "C sixth",
+      "subtitle": "C sixth subtitle",
+      "description": "C sixth desc",
       "chordPitches": [
         "C",
         "E",
@@ -1847,8 +1855,10 @@
       ]
     },
     {
-      "id": "C dominant seventh",
+      "id": "7",
       "title": "C dominant seventh",
+      "subtitle": "C dominant seventh subtitle",
+      "description": "C dominant seventh desc",
       "chordPitches": [
         "C",
         "E",
@@ -2431,8 +2441,10 @@
       ]
     },
     {
-      "id": "C lydian dominant seventh",
+      "id": "7#11",
       "title": "C lydian dominant seventh",
+      "subtitle": "C lydian dominant seventh subtitle",
+      "description": "C lydian dominant seventh desc",
       "chordPitches": [
         "C",
         "E",
@@ -3126,8 +3138,10 @@
       ]
     },
     {
-      "id": "C dominant flat ninth",
+      "id": "7b9",
       "title": "C dominant flat ninth",
+      "subtitle": "C dominant flat ninth subtitle",
+      "description": "C dominant flat ninth desc",
       "chordPitches": [
         "C",
         "Db",
@@ -3635,8 +3649,10 @@
       ]
     },
     {
-      "id": "C dominant sharp ninth",
+      "id": "7#9",
       "title": "C dominant sharp ninth",
+      "subtitle": "C dominant sharp ninth subtitle",
+      "description": "C dominant sharp ninth desc",
       "chordPitches": [
         "C",
         "Eb",
@@ -4206,8 +4222,10 @@
       ]
     },
     {
-      "id": "C dominant ninth",
+      "id": "9",
       "title": "C dominant ninth",
+      "subtitle": "C dominant ninth subtitle",
+      "description": "C dominant ninth desc",
       "chordPitches": [
         "C",
         "D",
@@ -4777,8 +4795,10 @@
       ]
     },
     {
-      "id": "C minor",
+      "id": "m",
       "title": "C minor",
+      "subtitle": "C minor subtitle",
+      "description": "C minor desc",
       "chordPitches": [
         "C",
         "Eb",
@@ -4998,8 +5018,10 @@
       ]
     },
     {
-      "id": "C minor seventh",
+      "id": "m7",
       "title": "C minor seventh",
+      "subtitle": "C minor seventh subtitle",
+      "description": "C minor seventh desc",
       "chordPitches": [
         "C",
         "Eb",
@@ -5426,8 +5448,10 @@
       ]
     },
     {
-      "id": "C minor ninth",
+      "id": "m9",
       "title": "C minor ninth",
+      "subtitle": "C minor ninth subtitle",
+      "description": "C minor ninth desc",
       "chordPitches": [
         "C",
         "D",
@@ -5687,8 +5711,10 @@
       ]
     },
     {
-      "id": "C minor sixth",
+      "id": "m6",
       "title": "C minor sixth",
+      "subtitle": "C minor sixth subtitle",
+      "description": "C minor sixth desc",
       "chordPitches": [
         "C",
         "Eb",
@@ -6115,8 +6141,10 @@
       ]
     },
     {
-      "id": "C diminished",
+      "id": "dim",
       "title": "C diminished",
+      "subtitle": "C diminished subtitle",
+      "description": "C diminished desc",
       "chordPitches": [
         "C",
         "Eb",
@@ -6315,8 +6343,10 @@
       ]
     },
     {
-      "id": "C half-diminished",
+      "id": "m7b5",
       "title": "C half-diminished",
+      "subtitle": "C half-diminished subtitle",
+      "description": "C half-diminished desc",
       "chordPitches": [
         "C",
         "Eb",
@@ -6717,8 +6747,10 @@
       ]
     },
     {
-      "id": "C diminished seventh",
+      "id": "dim7",
       "title": "C diminished seventh",
+      "subtitle": "C diminished seventh subtitle",
+      "description": "C diminished seventh desc",
       "chordPitches": [
         "C",
         "Eb",

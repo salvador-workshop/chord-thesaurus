@@ -16,6 +16,7 @@ import dimExtChords from '../data/dim-ext-chords.json';
 export default function ChordThesaurus() {
     const renderChordChapter = (chordChapter) => {
         return chordChapter.sections.map(section => {
+            console.log(section);
             return (
                 <Fragment key={section.id}>
                     <FbDiagramGroup settings={initialSettings} chordSection={section} />

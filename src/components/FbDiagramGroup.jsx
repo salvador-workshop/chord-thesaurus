@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { SVGuitarChord } from 'svguitar'
-import { formatChord } from '../style-utils';
+import { formatChord, formatChordId } from '../style-utils';
 
 /**
  * Renders a group of fretboard diagrams as one SVG
@@ -8,7 +8,7 @@ import { formatChord } from '../style-utils';
  * @prop {*} chordSection
  */
 export default function FbDiagramGroup({ settings, chordSection }) {
-    const domId = `fb-diagram-grp-${chordSection.id}`;
+    const domId = `fb-diagram-grp-${formatChordId(chordSection.id)}`;
     
     // base values for positioning calcs
     const svgGroupWidth = 2000;
@@ -76,6 +76,7 @@ export default function FbDiagramGroup({ settings, chordSection }) {
         chordSection.diagrams.forEach(diagram => {
             const chart = new SVGuitarChord(`.${domId}`);
             const formattedChord = formatChord(diagram);
+            console.log(settings, diagram, formattedChord);
             try {
                 chart.configure({
                     ...settings,
@@ -84,7 +85,7 @@ export default function FbDiagramGroup({ settings, chordSection }) {
                     title: diagram.title,
                 }).chord(formattedChord).draw();
             } catch (err) {
-                alert('Failed to create chart: ' + err.message);
+                console.error(`Failed to create chart: ${err.message}\n ${err.cause}`);
                 throw err;
             }
         })

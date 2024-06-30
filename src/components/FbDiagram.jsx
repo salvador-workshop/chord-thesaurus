@@ -15,7 +15,7 @@ export default function FbDiagram({ diagramId, chord, settings }) {
         try {
             chart.configure(settings).chord(chord).draw();
         } catch (err) {
-            alert('Failed to create chart: ' + err.message)
+            console.error(`Failed to create chart: ${err.message}\n ${err.cause}`);
             throw err
         }
     }

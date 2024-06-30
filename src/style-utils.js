@@ -3,7 +3,7 @@ const baseStrokeWidth = 5;
 export const initialSettings = {
     color: '#000000',
     strings: 6,
-    frets: 4,
+    frets: 12,
     position: 1,
     nutWidth: 18,
     strokeWidth: baseStrokeWidth,
@@ -58,4 +58,12 @@ export const formatChord = (jsonChord) => {
         }),
         barres: jsonChord.barres,
     }
+}
+
+/**
+ * Converts invalid characters in chord IDs (for DOM purposes)
+ * @param {*} chordId 
+ */
+export const formatChordId = (chordId) => {
+    return chordId.replace('#', 'sharp');
 }
